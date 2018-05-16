@@ -36,6 +36,10 @@ Your system should be built in an event driven manner. This means that it should
 
 
 ## structure
+This will be an event [driven system](https://en.wikipedia.org/wiki/Event-driven_architecture).
+At boot time, the sytem will be empty, and will require seeding. That seeding will read events from a file (see later sections) and pass them to the rest of the system. 
+
+
 1. Break the project into the MVC mode
 2. Ensure the model supports both abstract layers, as well as concrete. Ensure the concrete layers ARE NOT IN THE SAME PLACE (PACKAGE) as the abstraction
 3. Controllers should have the following purposes:
